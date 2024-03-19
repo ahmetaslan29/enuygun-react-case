@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+   @apply p-0 m-0 h-full w-full;
+}
+
+.header{
+   @apply h-20 w-full flex items-center justify-center text-4xl;
+}
+.footer{
+   @apply h-20 w-full flex items-center justify-center; 
+}
+.wrapper{
+   @apply container mx-auto px-4 py-6;
+
+   &__list{
+      @apply flex justify-center flex-wrap gap-4 gap-x-4;
+   }
+}
+.wrapper-detail{
+   @apply container mx-auto px-4 py-6;
+
+   .employee-box{
+      @apply flex justify-center flex-wrap gap-4 gap-x-4;
+
+   }
+}
+
+.employee-card{
+   @apply flex flex-col items-center justify-center relative lg:w-[20%] w-[45%];
+   @apply bg-white transition-shadow shadow-2xl border ;
+   @apply rounded-lg p-2 gap-6;
+   
+   .back{
+      @apply flex items-center justify-center;
+      @apply absolute top-0 left-0 h-8 w-8 rounded-lg bg-green-400;
+      @apply font-bold;
+   }
+   .link{
+      @apply flex flex-col items-center gap-6;
+
+      .box-head{
+         @apply flex flex-col items-center;
+
+         img{
+            @apply rounded-full;
+         }
+         .name{
+            @apply text-xl font-bold ;
+         }
+      }
+      .description{
+         @apply w-full bg-gray-100 p-1;
+         table{
+            td{
+               @apply p-1;
+            }
+         }
+
+         .info{
+            @apply text-base text-gray-600;
+         }
+      }
+     
+      .vote{
+         @apply flex items-center justify-center;
+         @apply absolute top-0 right-0 h-8 w-8 rounded-lg bg-green-400;
+         @apply font-bold;
+      } 
+   }
+   button{
+      @apply flex items-center justify-center;
+      @apply w-full h-8 bg-blue-300 font-bold mt-auto;
+   }
+}
+
