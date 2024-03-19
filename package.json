@@ -1,6 +1,7 @@
 {
   "name": "enuygun-react-case",
   "version": "1.0",
+  "homepage": "https://sparkly-belekoy-94c8e5.netlify.app/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
