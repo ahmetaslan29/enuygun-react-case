@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Home, HomeDetails } from './pages';
 import { Header, Footer } from './components'
@@ -10,10 +9,7 @@ import { Route, Routes } from 'react-router-dom';
 const App = () => {
 	
 	const dispatch = useDispatch();
-	
-	useEffect(() => {
-    dispatch(employee());
-  }, []);
+	dispatch(employee());
 	
 	return (
 		<>
