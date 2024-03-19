@@ -36,7 +36,7 @@ const EmployeeCard = ({ employee, detail }) => {
           </p>
         </div>
         <div className="description">
-          <table class="table-auto">
+          <table className="table-auto">
             <tbody>
               <tr>
                 <td> <strong>Job:</strong></td>
