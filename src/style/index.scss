@@ -29,7 +29,7 @@ body{
 }
 
 .employee-card{
-   @apply flex flex-col items-center justify-center relative lg:w-[20%] w-[45%];
+   @apply flex flex-col items-center justify-center relative xl:w-[24%] lg:w-[32%] md:w-[45%] w-[75%];
    @apply bg-white transition-shadow shadow-2xl border ;
    @apply rounded-lg p-2 gap-6;
    
@@ -39,7 +39,7 @@ body{
       @apply font-bold;
    }
    .link{
-      @apply flex flex-col items-center gap-6;
+      @apply flex flex-col items-center gap-6 w-full;
 
       .box-head{
          @apply flex flex-col items-center;
